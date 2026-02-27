@@ -100,20 +100,13 @@ Purpose
 - [ ] Linting passes (ESLint) and formatting applied.
 - [ ] Unit tests added/updated where applicable.
 
-_Review Report Format_
 
-When producing a code review using these instructions, follow this exact, repeatable format for each finding:
-
-- _Heading (Rule Violated):_ State the specific rule or checklist item that the code violates in italics.  
-- _Description:_ A one- or two-sentence explanation of what in the code triggered the violation (file, function, selector, line(s) if possible).  
-- _Fix / Suggested Change:_ A concrete suggestion to fix the issue. Include a short code snippet, a patch summary, or exact steps to resolve the problem when possible.
-
-Example:
-
-_Missing type attribute on input element_
-_Description:_ An `<input>` element in `login.html` is missing a `type` attribute, which can cause unexpected behavior and accessibility issues.
-_Fix / Suggested Change:_ Add an explicit type, for example `<input type="email" id="user-email" name="email">`. If the input expects email-like validation, ensure proper validation is applied.
-
-Use this format for every reported item so reviewers and authors can quickly scan violations, understand their impact, and apply fixes.
-
-If you'd like, I can also add a `script.tests.md` example or wire a minimal `package.json` with lint/test scripts. 
+## Review Feedback Format
+ 
+- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** formatting for the defect title/heading to ensure clear visibility. Also Captialize the title
+ 
+**Example:**
+```
+**Missing alt attribute on image**
+The image on line 42 is missing an alt attribute, which is required for accessibility.
+```
