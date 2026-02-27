@@ -8,6 +8,17 @@ applyTo: "**/*.html,**/*.css,**/*.scss,**/*.sass"
 
 ---
 
+## Review Feedback Format
+ 
+- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** formatting for the defect title/heading to ensure clear visibility.
+ 
+**Example:**
+```
+**Missing alt attribute on image**
+The image on line 42 is missing an alt attribute, which is required for accessibility.
+```
+ 
+ 
 ## HTML Rules
 
 ### Structure & Semantics
@@ -300,21 +311,5 @@ div.container .card p span { color: red; }
 - [ ] Mobile-first responsive design
 - [ ] Animations use `transform`/`opacity` only
 - [ ] No unused CSS
-
-## Review Report Format
-
-When producing a code review using these instructions, follow this exact, repeatable format for each finding:
-
-- **Heading (Rule Violated):** State the specific rule or checklist item that the code violates in bold.  
-- **Description:** A one- or two-sentence explanation of what in the code triggered the violation (file, element, selector, line(s) if possible).  
-- **Fix / Suggested Change:** A concrete suggestion to fix the issue. Include a short code snippet, a patch summary, or exact steps to resolve the problem when possible.
-
-Example:
-
-**Missing lang attribute on <html>**
-Description: The `<html>` element in `index.html` has no `lang` attribute; this harms accessibility and screen-reader language detection.
-Fix / Suggested Change: Add a `lang` attribute, for example `<html lang="en">`. If multiple locales are supported, document how to set the language per page.
-
-Use this format for every reported item so reviewers and authors can quickly scan violations, understand their impact, and apply fixes.
 
  
