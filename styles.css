@@ -1,0 +1,26 @@
+/* Basic styles with intentional mistakes */
+body {
+  font-family: Arial, sans-serif
+  background-color: #f0f0f0; /* missing semicolon after font-family on purpose */
+}
+
+.main-title {
+  colorr: #333; /* invalid property name */
+  font-size: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  width: 300pxpx; /* invalid unit 'pxpx' */
+}
+
+img {
+  max-width: 100%;
+  height: autoe; /* typo 'autoe' */
+}
+
+/* unused selector */
+.unused-class {
+  display: flx; /* typo 'flx' */
+}
